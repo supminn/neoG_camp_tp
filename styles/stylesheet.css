@@ -15,19 +15,13 @@ hr {
     margin: 2rem 0rem;
 }
 
-/** spaces **/
-
-.margin-md {
-    margin: 2rem;
-}
-
 /** container **/
 .container {
     padding: 0rem 1rem;
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -36,8 +30,6 @@ hr {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    /* margin-top: 5rem;
-    margin-bottom: 1rem; */
 }
 
 .link-primary {
@@ -53,8 +45,6 @@ hr {
     border: 1px solid var(--primary-color);
 }
 
-/** look into BEM naming convention for CSS **/
-
 /** lists **/
 
 .list-non-bullet {
@@ -65,7 +55,9 @@ hr {
     display: inline;
     padding: 0rem 0.5rem;
 }
-
+.list-size-large{
+    font-size: large;
+}
 /** navigation **/
 
 .navigation {
@@ -98,12 +90,10 @@ hr {
 
 .hero {
     padding: 2rem;
-    padding-top: 5rem;
-
 }
 
 .hero .hero-img {
-    max-width: 350px;
+    max-width: 400px;
     display: block;
     margin: auto;
 }
@@ -121,12 +111,11 @@ hr {
 /** sections **/
 
 .section {
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.section h1 {
+.section h1,h3,p,ul {
     text-align: center;
-
 }
 
 .off-white {
@@ -137,7 +126,7 @@ hr {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    padding:1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
