@@ -26,6 +26,9 @@ hr {
 }
 
 /** links **/
+.web-link {
+    color: var(--primary-color);
+}
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -112,14 +115,12 @@ hr {
 
 .section {
     padding: 1rem;
-}
-
-.section h1,h3,p,ul {
     text-align: center;
 }
 
 .off-white {
     background-color: var(--off-white);
+    border-radius: 1rem;
 }
 
 /** footers **/
