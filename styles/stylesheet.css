@@ -14,7 +14,9 @@ body {
 hr {
     margin: 2rem 0rem;
 }
-
+p {
+    line-height: 1.6;
+}
 /** container **/
 .container {
     padding: 0rem 1rem;
@@ -96,7 +98,7 @@ hr {
 }
 
 .hero .hero-img {
-    max-width: 400px;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
