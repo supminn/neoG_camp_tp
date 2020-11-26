@@ -3,7 +3,7 @@
 :root {
     --primary-color:#DC2626;
     --off-white: #FEF2F2;
-    --dark-gray: #6B7280;
+    --dark-gray: #555b66;
 }
 
 body {
@@ -16,6 +16,10 @@ hr {
 }
 p {
     line-height: 1.6;
+}
+/** Background img for home page **/
+.homepage{
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url("/images/home-bg.jpg");
 }
 /** container **/
 .container {
