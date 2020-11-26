@@ -11,7 +11,8 @@
  3. Repl.it
  4. CHALK
 
-Few of the webpages I referred to while styling
+Few of the webpages I referred to while styling:
+[google](https://www.google.com)
 1. [Fonts](https://fonts.google.com/specimen/Lora?sidebar.open=true&selection.family=Lora:ital,wght@0,700;1,400)
 2. [Colors](https://tailwindcss.com/docs/customizing-colors)
 3. [Images](https://undraw.co/illustrations)
