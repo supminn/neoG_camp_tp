@@ -17,3 +17,4 @@ Few of the webpages I referred to while styling:
 2. [Colors](https://tailwindcss.com/docs/customizing-colors)
 3. [Images](https://undraw.co/illustrations)
 4. [Icons](https://fontawesome.com/icons/discord?style=brands)
+5. [Emojio](https://emojipedia.org/)
