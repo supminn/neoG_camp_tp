@@ -151,3 +151,23 @@ p {
 .footer ul {
     padding-inline-start: 0px;
 }
+
+.display-flex{
+    display: flex;
+    max-width: 400px;
+}
+.display-flex span{
+    flex-wrap: wrap;
+    justify-content: center;
+
+@media only screen and (max-width: 450px){
+    .hero .hero-img {
+        max-width: 250px;
+        display: block;
+        margin: auto;
+    }
+    .display-flex span{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
