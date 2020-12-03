@@ -7,6 +7,7 @@
     <title>Supminn | Projects</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
     <link href="styles/stylesheet.css" rel="stylesheet" />
+    <link href="styles/blog-styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
@@ -28,11 +29,161 @@
 
     <header class="hero">
         <img class="hero-img" src="images/html-css-js.svg" />
-        <h1 class="hero-heading">Blog written by <span class="heading-inverted"> Supriya</span></h1>
+        <h1 class="hero-heading">Beginning with <span class="heading-inverted">HTML</span></h1>
     </header>
 
-    <h1 style="text-align: center;">This post will be uploaded soon!!</h1>
+    <section class="blog-section container-center">
+        <small>Created on: December 2020</small>
+        <p>Whether you’re interested in becoming a professional web developer or you simply want to learn more about how
+            websites work, the first thing you need to study is HTML.</p>
+        <p>HTML is the standard language that is used for creating webpages and web applications. Every time you access
+            a website, a server sends an HTML file to your computer and your browser interprets and displays the
+            information included in that file. In fact, all the information you are reading now is simply data that has
+            been stored in an HTML file and sent to your browser.</p>
+        <p>This guide will provide an introduction to writing HTML, examine the basic building blocks of HTML such as
+            tags, elements and attributes. By the end of reading this blog, you should have the basic knowledge required
+            to start working on your own HTML projects.</p>
+    </section>
+    <section class="blog-section container-center off-white">
+        <h2 class="quote">What Is HTML?</h2>
+        <p>HTML stands for <strong>HyperText Markup Language</strong>, which could be a confusing term for many
+            beginners. The best way to explain HTML is to examine the meaning of each word.</p>
+        <p><strong>HyperText</strong> refers to text that contains links to other texts. Every time you click on a
+            highlighted or underlined link that takes you to another page, you are using hypertext. As the pages
+            increase using hypertext to link to each other, a “web” of pages starts to form. This is where we get the
+            term <i>World Wide Web</i>.</p>
+        <p><strong>Markup</strong> refers to the special symbols or codes that are inserted into a document to tell the
+            web browser how to display the document data. For example, markup code may tell the browser to display a
+            phrase in <strong>bold</strong> or <i>italic</i> or <u>underlined</u>, or may tell the browser which parts
+            of the document are headings and which are paragraphs. HTML is just one of a number of languages that uses
+            markup code.</p>
+        <p><strong>Language</strong> refers to the idea that the code is standardized. Just like regular spoken
+            languages, there are certain rules that everyone must follow when writing HTML. This is so that all browsers
+            can understand and interpret the code. There are many different programming languages, some of the popular
+            ones such as Java, Python and Ruby. Each language has its own unique set of rules, and many languages can be
+            used in combination with HTML to create amazing webpages and applications.</p>
+        <p>Combining the 3 definitions together, HTML is “a programming language that uses unique code which allows you
+            to display linked documents in a browser”.</p>
+    </section>
+    <section class="blog-section container-center">
+        <h2 class="quote">Example of HTML Code</h2>
+        <p>Whether you’re interested in becoming a professional web developer or you simply want to learn more about how
+            websites work, the first thing you need to study is HTML.</p>
+        <p>HTML markup consists of several key components, including those called tags (and their attributes),
+            character-based data types, character references and entity references. HTML tags most commonly come in
+            pairs like <<span>h1</span>> and <<span>/h1</span>>. The first tag in such a pair is the start tag, and the
+                    second is the end tag (they are also called opening tags and closing tags). There are some tags that
+                    represent empty elements and so are unpaired, for example <<span>img</span>> or <<span>br</span>>.
+        </p>
+        <p> Here’s an example of some simple HTML code: <br><br>
+            <<span>!DOCTYPE html</span>>
+            </br>
+            <<span>html</span>>
+            </br>
+            <<span>head</span>>
+            </br>
+            <<span>title</span>>Page Title<<span>/title</span>>
+            </br>
+            <<span>/head</span>>
+            </br>
+            <<span>body</span>>
+            </br>
+            <<span>h1</span>>This is a heading.<<span>/h1</span>>
+            </br>
+            <<span>p</span>>This is a paragraph.<<span>/p</span>>
+            </br>
+            <<span>/body</span>>
+            </br>
+            <<span>/html</span>>
+        </br><br>
+        If you save this code into a text file with the filename “test.html” and open it in your browser, it should display a page like this:
+        </p>
+        <img src="images/test-html.png" alt="html output">
+        <p>I know it’s not very exciting, but it’s a good example of a website in its simplest form. Even without any
+            knowledge of HTML, you can probably understand a little bit about how HTML works by simply looking at the
+            code above and comparing it to the image.</p>
+        <p>You can check out this page's source code as well. Right click -> view source code.</p>
+    </section>
+    <section class="blog-section container-center off-white">
+        <h2 class="quote">The Basics Of HTML Code</h2>
+        <p>There are three components that form the basic building blocks of HTML code: tags, elements and attributes.
+            Once you’ve learned the rules for how each of these components function, you should have no trouble writing
+            and editing HTML.</p>
+        <p><strong><u>HTML Tags</u></strong></p>
+        <p>Tags are used to separate HTML code from regular text. Any text written inside the angle brackets will not be
+            displayed in the browser. The text inside the angle brackets is just used to tell the browser how to display
+            or transform regular text located between the opening tag (also called the start tag) and the closing tag
+            (also called the end tag).</p>
+        <p>Tags usually come in pairs, and the difference between an opening tag and a closing tag is that the first
+            symbol inside the brackets of a closing tag is a slash "/" symbol.</p>
+        <p>For example, If we want to have the sentence display in italic text, we can add an <<span>i</span>> opening
+                tag before the text, and an <<span>/i</span>> closing tag after the text. As you’ve probably guessed,
+                    the 'i' stands for "italic"</p>
+        <p>Similarly, If we want to have a word to be displayed as a hyperlink, we can add an <<span>a
+                href="www.google.com"</span>> opening tag before the text, and an <<span>/a</span>> closing tag after
+                    the text. Here, 'a' stands for "anchor".</p>
+    </section>
+    <section class="blog-section container-center ">
+        <p><strong><u>HTML Elements</u></strong></p>
+        <p>An element is an opening tag, a closing tag, and all the content that is included between the two tags.</p>
+        <p>
+            <<span>h3</span>>My Name is Supriya<<span>/h3</span>>
+        </p>
+        <p>In this example, <<span>h3</span>> is the opening tag, <<span>/h3</span>> is the closing tag, and "My Name is
+                    Supriya" is the content. When we put it all together, we have an element.</p>
+        <p>Elements are the like the puzzle pieces of HTML. You take a bunch of elements and fit them together to make a
+            complete picture. In its most basic form, a webpage is simply an HTML document that is filled with complete
+            HTML elements.</p>
+        <p>Now, if you refer to the previous example code, You can probably recognize the h1 and p elements. If you look
+            carefully, you may notice that these two elements are actually nested within another element, the body
+            element. The body element is a special element that contains all the main content of the document that we
+            want displayed in the browser.</p>
+        <p>Above the body element is another element, the head element. This is where we add special information about
+            the document that we don’t want displayed in the browser, such as the document title and the document style.
+        </p>
+        <p>The body element and the head element are separate elements, but you may have noticed that these two elements
+            are actually nested inside another element, the html element. The html element is the most basic element of
+            all, and contains all the other elements included in the document.</p>
+        <p>So if we go back and look at the h1 element, we can see that it is actually an element (h1) within an element
+            (body) within an element (html).When you start writing very complex code, you might find yourself working
+            with elements nested ten, twenty or even one-hundred levels deep!</p>
+    </section>
+    <section class="blog-section container-center off-white ">
+        <p><strong><u>HTML Attributes</u></strong></p>
+        <p>Attributes are used to define additional information about an element. They are located inside the opening
+            tag, and usually come in name/value pairs (name=“value”).</p>
+        <p>All HTML elements can have attributes, but for most elements, we only use them when we need to.Attributes can
+            be used to define things such as the height and width of an image, the style of an element (eg. color, size,
+            font) and the language of the document.</p>
+        <p>The aforementioned anchor tags which is used to create a hyperlink:</p>
+        <p>
+            <<span>a href="www.google.com"</span>>This is some text.<<span>/a</span>>
+        </p>
+        <p>The anchor tag is used to create a hyperlink, and the href attribute is to define the link address. Without
+            the href attribute, you can still click on the link but nothing will happen.</p>
+        <p>There are three main guidelines for using attributes.</p>
+        <ul>
+            <li>Although you can write attributes in upper case, it’s a good idea to write attributes in lower case
+                only.</li>
+            <li>Although it’s not strictly necessary, it’s a good idea to put quotation marks around the value to make
+                it easier to identify.</li>
+            <li>Although you can use single quotation marks (‘value’), it’s a good idea to put values in double
+                quotation marks (“value”).</li>
+        </ul>
+       <p>So, when we put together everything we know about tags, elements and attributes, we get a basic template of how
+        an element should be written:</p>
+       <p><<span>tag attribute=“value”</span>>Some content<<span>/tag</span>>
+        </p>
+    </section>
+    <section class="blog-section container-center">
+        <p>Let me know what you think about this article. I Hope this helped you get a basic understaning of HTML.</p>
+        <strong>Peace!</strong>
+    </section>
 
+    <div class="container">
+        <a class="link link-secondary" href="#">Scroll to the top</a>
+        <br><br>
+    </div>
     <footer class="footer">
         <div class="footer-header">Social media presence</div>
         <ul class="social-links list-non-bullet">
@@ -43,7 +194,7 @@
             </li>
             <li class="list-item-inline">
                 <a class="link" href="https://github.com/supminn">
-                   <i class="fab fa-github">  Github </i>
+                    <i class="fab fa-github"> Github </i>
                 </a>
             </li>
             <li class="list-item-inline">
