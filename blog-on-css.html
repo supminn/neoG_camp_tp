@@ -29,11 +29,180 @@
 
     <header class="hero">
         <img class="hero-img" src="images/html-css-js.svg" />
-        <h1 class="hero-heading">Blog written by <span class="heading-inverted"> Supriya</span></h1>
+        <h1 class="hero-heading">Beautify with <span class="heading-inverted">CSS</span></h1>
     </header>
 
-    <h1 style="text-align: center;">This post will be uploaded soon!!</h1>
+    <section class="blog-section container-center">
+        <small>Created on: 4th December 2020</small>
+        <p>If you have read through my previous blog on <a class="web-link" href="blog-on-html.html">Beginning with
+                HTML</a>, you would have a basic understanding on how to create a simple webpage. However, it lacks the
+            design, styling or colors. To be honest, everything looks like a black and white document without a proper
+            alignment or format. This blog would help you achieve all of aforementioned with the help of CSS.</p>
+    </section>
+    <section class="blog-section container-center off-white">
+        <h2 class="quote">What is CSS?</h2>
+        <p>CSS stands for <strong>Cascading Style Sheet</strong>. Where HTML is what defines the structure and content
+            of a web page, a Cascading Style Sheet is a web document that allows you to change the appearance of the
+            HTML.</p>
+        <p>CSS allows you to change the size, style, font, and color of text; margins and padding; background colors and
+            border styles. It can also be used to position elements on a page (but we’ll leave that for another day).
+        </p>
+        <p>The best thing about CSS is that it allows you to make <i>global style changes</i> that affect every instance
+            of a certain element throughout your blog or website so that you don’t have to make these changes at the
+            individual page level. This saves you a ton of time when it comes to redesigning your blog.</p>
+        <p>To make it simpler, the h1 (heading 1) tag within the HTML is displayed as extra large, bold, black text. If
+            we want to change the color, font and size of all the h1’s on our blog to keep consistency throughout, all
+            you need to do is define what <u>all h1’s</u> will look like in your CSS.</p>
+        <p>Sometimes different browsers may display slightly different default styles. Using a style sheet to define
+            what a specific element should look like can keep the look of your blog consistent from one browser to
+            another as well as one device to another.</p>
+    </section>
+    <section class="blog-section container-center ">
+        <h2 class="quote">How does it work?</h2>
+        <p>A very important piece of CSS is the <strong>“Cascading”</strong> part. The browser reads style definitions
+            from top to bottom in a style sheet. This means that a style you define lower in the style sheet will
+            override any previous styles defined earlier in the style sheet. We’ll get into that in a moment. You can
+            also have a style sheet override another style sheet. There are certain defualt styles applied for specific
+            tags by the browser and this is how we are able to override predefined styles from our webpage, as our
+            custom style sheet is usually the last one read by the browser.</p>
+        <p>There are three different ways to implement CSS on a webpage</p>
+        <ul>
+            <li><strong>Internal CSS</strong></li>
+            <p>Internal or embedded CSS requires you to add <<span>style</span>> tag in the <<span>head</span>> section
+                        of your HTML document. This CSS style is an effective method of styling a single page. However,
+                        using this style for multiple pages is time-consuming as you need to put CSS rules to every page
+                        of your website.</p>
+            <p>Here's how you can use Internal CSS</p>
+            <code>
+                <<span>!DOCTYPE html</span>>
+                </br>
+                <<span>html</span>>
+                </br>
+                <<span>head</span>>
+                </br>
+                <<span>title</span>>Page Title<<span>/title</span>>
+                </br>
+                <<span>style</span>>
+                </br>
+                body { </br>
+                    &nbsp; &nbsp; &nbsp; background-color: blue; </br>
+                } </br>
+                h1 { </br>
+                    &nbsp; &nbsp; &nbsp; color: red; </br>
+                    &nbsp; &nbsp; &nbsp;padding: 60px; </br>
+                } </br>
+                <<span>/style</span>>
+                </br>
+                <<span>/head</span>>
+                </br>
+                <<span>body</span>>
+                </br>
+                <<span>h1</span>>This is a heading.<<span>/h1</span>>
+                </br>
+                <<span>p</span>>This is a paragraph.<<span>/p</span>>
+                </br>
+                <<span>/body</span>>
+                </br>
+                <<span>/html</span>>
+            </code>
+        </ul>
+    </section>
 
+    <section class="blog-section container-center off-white">
+        <ul>
+            <li><strong>External CSS</strong></li>
+            <p>With external CSS, you’ll link your web pages to an external .css file, which can be created by any text
+                editor in your device (e.g., Notepad++, VSCode).This CSS type is a more efficient method, especially for
+                styling a large website. By editing one .css file, you can change your entire site at once.</p>
+            <p>Follow these steps to use external CSS:</p>
+            <ol>
+                <li>Create a new .css file with the text editor, and add the style rules. For example:</li>
+                <code>
+                    body { </br>
+                    &nbsp; &nbsp; &nbsp;background-color: blue; </br>
+                    } </br>
+                    h1 { </br>
+                    &nbsp; &nbsp; &nbsp;color: red; </br>
+                    &nbsp; &nbsp; &nbsp;padding: 60px; </br>
+                    } </code>
+                <li>In the <<span>head</span>> section of your HTML sheet, add a reference to your external .css file right
+                        after <<span>title</span>>tag:</li>
+                <code><<span>link rel="stylesheet" type="text/css" href="style.css" /></span></code>
+            </ol>
+            <p>Don’t forget to change style.css with the name of your <i>.css</i> file.</p>
+        </ul>
+    </section>
+
+    <section class="blog-section container-center">
+        <ul>
+            <li><strong>Inline CSS</strong></li>
+            <p>Inline CSS is used to style a specific HTML element. For this CSS style, you’ll only need to add the style attribute to each HTML tag, without using selectors. This CSS type is not really recommended, as each HTML tag needs to be styled individually. Managing your website may become too hard if you only use inline CSS.</p>
+            <p>However, inline CSS in HTML can be useful in some situations. For example, in cases where you don’t have access to CSS files or need to apply styles for a single element only.</p>
+            <p>Let’s take a look at an example. Here, we add an inline CSS to the <<span>p</span>>  and <<span>h1</span>>  tag:</p>
+            <code>
+                <<span>!DOCTYPE html</span>>
+                </br>
+                <<span>html</span>>
+                </br>
+                <<span>head</span>>
+                </br>
+                <<span>title</span>>Page Title<<span>/title</span>>
+                </br>
+                <<span>/head</span>>
+                </br>
+                <<span>body</span>>
+                </br>
+                <<span>h1 style="color:white;padding:30px;"</span>>This is a heading.<<span>/h1</span>>
+                </br>
+                <<span>p style="color:white;"</span>>This is a paragraph.<<span>/p</span>>
+                </br>
+                <<span>/body</span>>
+                </br>
+                <<span>/html</span>>
+            </code>
+        </ul>
+    </section>
+    <section class="blog-section container-center off-white">
+        <h2 class="quote">How CSS gets applied?</h2>
+        <p>CSS is applied to HTML elements in a web page by declaring specific styles for each element. A style declaration looks like this:</p>
+        <code>
+            selector { </br>
+             &nbsp; &nbsp; &nbsp; property: value; </br>
+           }
+        </code>
+        <p>Let’s look at each of these pieces separately:</p>
+        <p>The <strong>selector</strong> is the piece of content that we want to target and style. It is either an HTML element or a Class Name. When defining an HTML element, we use the tag name without the opening and closing bracket. For example, the <i><<span>p</span>></i> (or paragraph tag) would simply be: <i>p</i></p>
+        <p>A Class Name always begins with a dot(.) For example, <i>.container</i></p>
+        <p><strong>Property</strong> and their respective values always live within curly braces:</p>
+        <code>
+            p { </br>
+              } 
+        </code>
+        <p>Properties are predefined terms within CSS that all web browsers understand. They are things like: font-family, font-size, color, etc. A property is always followed by a colon (:)</p>
+        <code>
+            p { </br>
+                &nbsp; &nbsp; &nbsp; font-family: </br>
+                &nbsp; &nbsp; &nbsp; font-size: </br>
+              } 
+        </code>
+        <p>The <strong>value</strong> is the particular style or variable you choose to assign to a property. A value is always followed by a semi-colon (;) For example:</p>
+        <code>
+            p { </br>
+                &nbsp; &nbsp; &nbsp;font-family: Arial;</br>
+                &nbsp; &nbsp; &nbsp;font-size: 16px;</br>
+                &nbsp; &nbsp; &nbsp;color: gray;</br>
+                }
+        </code>
+        <p>So the example above tells the browser that we want all of our page titles (or any element surrounded by an <p> tag) to be displayed in Arial font at 16 pixels in size and in the color gray. Pretty easy, right? </p>
+    </section>
+    <section class="blog-section container-center">
+        <p>Let me know what you think about this article. I Hope this provided you an introduction to CSS.</p>
+        <strong>Peace!</strong>
+    </section>
+    <div class="container">
+        <a class="link link-secondary" href="#">Scroll to the top</a>
+        <br><br>
+    </div>
     <footer class="footer">
         <div class="footer-header">Social media presence</div>
         <ul class="social-links list-non-bullet">
@@ -44,7 +213,7 @@
             </li>
             <li class="list-item-inline">
                 <a class="link" href="https://github.com/supminn">
-                   <i class="fab fa-github">  Github </i>
+                    <i class="fab fa-github"> Github </i>
                 </a>
             </li>
             <li class="list-item-inline">
