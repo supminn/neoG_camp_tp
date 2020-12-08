@@ -18,3 +18,4 @@ Few of the webpages I referred to while styling:
 3. [Images](https://undraw.co/illustrations)
 4. [Icons](https://fontawesome.com/icons/discord?style=brands)
 5. [Emojio](https://emojipedia.org/)
+6. [Background](https://www.svgbackgrounds.com)
