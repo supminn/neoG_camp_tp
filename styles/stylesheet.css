@@ -76,16 +76,12 @@ p {
     padding: 0.1rem;
     border-bottom-left-radius: 1rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .navigation .nav-brand {
     font-weight: bold;
     padding: 1rem;
-}
-
-.navigation .nav-pills {
-    text-align: right;
-    flex-grow: 1;
 }
 
 .navigation .link {
