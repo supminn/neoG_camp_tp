@@ -15,10 +15,11 @@ window.onload = () => {
 const setDarkTheme = () => {
   toggleTheme.classList.remove("far", "fa-moon");
   toggleTheme.classList.add("fas", "fa-sun");
-  colorPallete.style.setProperty("--off-white", "#463c3c");
+  colorPallete.style.setProperty("--off-white", "#413333");
   colorPallete.style.setProperty("--bg-color", "#312222");
   colorPallete.style.setProperty("--font-color", "#FEF2F2");
-  colorPallete.style.setProperty("--dark-gray", "#abaeb4");
+  colorPallete.style.setProperty("--dark-gray", "#ABAEB4");
+  colorPallete.style.setProperty("--primary-color", "#A60808");
   if (homePageBackground) {
     homePageBackground.style.setProperty("background", "#312222");
   }
@@ -32,6 +33,7 @@ const setLightTheme = () => {
   colorPallete.style.setProperty("--bg-color", "#ffffff");
   colorPallete.style.setProperty("--font-color", "#000000");
   colorPallete.style.setProperty("--dark-gray", "#555b66");
+  colorPallete.style.setProperty("--primary-color", "#A60808"); //#DC2626
   if (homePageBackground) {
     homePageBackground.style.setProperty(
       "background",

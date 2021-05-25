@@ -26,3 +26,7 @@ You have reached the pit stop for viewing [Supminn's](https://twitter.com/supmin
 5. [Emojio](https://emojipedia.org/)
 6. [Background](https://www.svgbackgrounds.com)
 
+### Next steps
+* Use grid and flex for desktop design on all pages.
+* Add images for main projects and blogs.
+* Update the list and use list to show remaining projects.

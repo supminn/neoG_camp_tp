@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap');
 
 :root {
-    --primary-color: #DC2626;
     --icon-shade:#FEF2F2;
 }
 
@@ -89,6 +88,8 @@ p {
     border-bottom-left-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .navigation .nav-brand {
@@ -222,10 +223,6 @@ p {
         padding: 0.5rem;
     }
 
-    .navigation {
-        position: sticky;
-        top: 0;
-    }
 
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
