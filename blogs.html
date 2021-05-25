@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Blogs, technical blog, non-technical blog, Supriya, Web developer">  
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Blogs, technical blog, non-technical blog, Supriya, Web developer">
     <meta name="description" content="Technical and non-technical blogs">
-    <meta name="author" content="Supriya">  
-    <meta name="Copyright" content="SupTECH"> 
+    <meta name="author" content="Supriya">
+    <meta name="Copyright" content="SupTECH">
     <title>Supminn | Blogs</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
     <link href="styles/stylesheet.css" rel="stylesheet" />
@@ -16,116 +17,127 @@
 
 <body>
     <nav class="navigation container">
-        <div class="nav-brand">SupTECH</div>
-        <ul class="list-non-bullet nav-pills">
+        <div class="flex-container">
+            <b class="nav-brand">SupTECH</b>
+            <i class="btn-theme far fa-moon"></i>
+        </div>
+        <ul class="list-non-bullet nav-pills flex-mobile">
             <li class="list-item-inline">
-                <a class="link" href="/">Home</a>
+                <a class="link" href="/"><i class="fas fa-home"></i><span class="web-desc"> Home</span></a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/projects.html">Projects</a>
+                <a class="link" href="/projects.html"><i class="fas fa-tablet-alt"></i><span class="web-desc">
+                        Projects</span></a>
             </li>
             <li class="list-item-inline">
-                <a class="link link-active" href="/blogs.html">Blogs</a>
+                <a class="link link-active" href="/blogs.html"><i class="fas fa-newspaper"></i><span class="web-desc">
+                        Blogs</span></a>
             </li>
         </ul>
     </nav>
+    <div class="content-container">
 
-    <header class="hero">
-        <img class="hero-img" src="images/blogs.svg" />
-        <h1 class="hero-heading">Blogs written by <span class="heading-inverted"> Supriya</span></h1>
-    </header>
+        <header class="hero">
+            <img class="hero-img" src="images/blogs.svg" />
+            <h1 class="hero-heading">Blogs written by <span class="heading-inverted"> Supriya</span></h1>
+        </header>
 
-    <section class="section container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i>Garbage Collection in JavaScript</h1>
-        <small>Created on: 6th February 2021</small>
-        <p>Understand how <strong>memory management</strong> takes place in JavaScript. Give it a read on <a
-            class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>! or <a
-            class="web-link" href="https://hashnode.com" target="_blank">Hashnode.com</a>!</p>
-        <a class="link link-secondary" href="https://supminn.hashnode.dev/garbage-collection-in-javascript">Hashnode</a>
-        <a class="link link-secondary" href="https://dev.to/supminn/garbage-collection-in-javascript-56e0">Dev.to</a>
-    </section>
+        <section class="section container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Garbage Collection in JavaScript</h1>
+            <small>Created on: 6th February 2021</small>
+            <p>Understand how <strong>memory management</strong> takes place in JavaScript. Give it a read on <a
+                    class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>! or <a class="web-link"
+                    href="https://hashnode.com" target="_blank">Hashnode.com</a>!</p>
+            <div class="flex-container"> <a class="link link-secondary"
+                    href="https://supminn.hashnode.dev/garbage-collection-in-javascript">Hashnode</a>
+                <a class="link link-secondary"
+                    href="https://dev.to/supminn/garbage-collection-in-javascript-56e0">Dev.to</a>
+            </div>
+        </section>
 
-    <section class="section off-white container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i> Get started with functions in JavaScript</h1>
-        <small>Created on: 7th January 2021</small>
-        <p>Understand the basics of <strong>defining</strong> and  <strong>calling</strong>. Give it a read on <a
-            class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>! or <a
-            class="web-link" href="https://hashnode.com" target="_blank">Hashnode.com</a>!</p>
-        <a class="link link-secondary" href="https://supminn.hashnode.dev/functions-in-javascript">Hashnode</a>
-        <a class="link link-secondary" href="https://dev.to/supminn/get-started-with-functions-in-javascript-479h">Dev.to</a>
-    </section>
+        <section class="section off-white container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Get started with functions in JavaScript</h1>
+            <small>Created on: 7th January 2021</small>
+            <p>Understand the basics of <strong>defining</strong> and <strong>calling</strong>. Give it a read on <a
+                    class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>! or <a class="web-link"
+                    href="https://hashnode.com" target="_blank">Hashnode.com</a>!</p>
+            <div class="flex-container"> <a class="link link-secondary"
+                    href="https://supminn.hashnode.dev/functions-in-javascript">Hashnode</a>
+                <a class="link link-secondary"
+                    href="https://dev.to/supminn/get-started-with-functions-in-javascript-479h">Dev.to</a></div>
+        </section>
 
-    <section class="section container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i> Minion translation webapp</h1>
-        <small>Created on: 15th December 2020</small>
-        <p>Learn to create the <strong>minions</strong> translation app using <strong>JavaScript</strong> Give it a read on <a
-            class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>!</p>
-        <a class="link link-secondary" href="https://dev.to/supminn/develop-the-minion-translation-web-app-14n3">Let's Go!</a>
-    </section>
-    
-    <section class="section off-white container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i> Introduction to Qlik Sense</h1>
-        <small>Created on: 7th December 2020</small>
-        <p>Learn to create your <strong>dashboard</strong> on Qlik sense, one of the best BI software. Give it a read on <a
-            class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>!</p>
-        <a class="link link-secondary" href="https://dev.to/supminn/qlik-sense-dashboard-development-5556">Let's Go!</a>
-    </section>
+        <section class="section container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Minion translation webapp</h1>
+            <small>Created on: 15th December 2020</small>
+            <p>Learn to create the <strong>minions</strong> translation app using <strong>JavaScript</strong> Give it a
+                read on <a class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>!</p>
+            <a class="link link-secondary"
+                href="https://dev.to/supminn/develop-the-minion-translation-web-app-14n3">Let's Go!</a>
+        </section>
 
-    <section class="section container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i> Beautify with CSS</h1>
-        <small>Created on: 4th December 2020</small>
-        <p><strong>Enhance</strong> the appearance of your webapp using a vast ocean of CSS.</p>
-        <a class="link link-secondary" href="blog-on-css.html">Let's Go!</a>
-    </section>
+        <section class="section off-white container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Introduction to Qlik Sense</h1>
+            <small>Created on: 7th December 2020</small>
+            <p>Learn to create your <strong>dashboard</strong> on Qlik sense, one of the best BI software. Give it a
+                read on <a class="web-link" href="https://dev.to/" target="_blank">Dev.to</a>!</p>
+            <a class="link link-secondary" href="https://dev.to/supminn/qlik-sense-dashboard-development-5556">Let's
+                Go!</a>
+        </section>
 
-    <section class="section off-white container-center">
-        <h1><i class="fas fa-chalkboard-teacher"></i> Beginning with HTML</h1>
-        <small>Created on: 3rd December 2020</small>
-        <p>Learn to create your first <strong>webpage</strong>. Give it a read!</p>
-        <a class="link link-secondary" href="blog-on-html.html">Let's Go!</a>
-    </section>
+        <section class="section container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Beautify with CSS</h1>
+            <small>Created on: 4th December 2020</small>
+            <p><strong>Enhance</strong> the appearance of your webapp using a vast ocean of CSS.</p>
+            <a class="link link-secondary" href="blog-on-css.html">Let's Go!</a>
+        </section>
 
-    <section class="section container-center">
-        <h1><i class="fas fa-icons"></i> A song that spreads peace and harmony</h1>
-        <small>Created on: 26th November 2020</small>
-        <p><strong>Experience</strong> the calmness in the voice of MSS.</p>
-        <a class="link link-secondary" href="blog-on-maithreem-bhajatha.html">Let's Go!</a>
-    </section>
-    
-    <section class="section off-white container-center">
-        <h1><i class="fas fa-icons"></i> Carnatic musical instruments</h1>
-        <small>Created on: 25th November 2020</small>
-        <p>Enter the world of <strong>carnatic music</strong> and understand the various musical instruments used in a
-            concert!</p>
-        <a class="link link-secondary" href="blog-on-carnatic-instruments.html">Let's Go!</a>
-    </section>
+        <section class="section off-white container-center">
+            <h1><i class="fas fa-chalkboard-teacher"></i> Beginning with HTML</h1>
+            <small>Created on: 3rd December 2020</small>
+            <p>Learn to create your first <strong>webpage</strong>. Give it a read!</p>
+            <a class="link link-secondary" href="blog-on-html.html">Let's Go!</a>
+        </section>
+
+        <section class="section container-center">
+            <h1><i class="fas fa-icons"></i> A song that spreads peace and harmony</h1>
+            <small>Created on: 26th November 2020</small>
+            <p><strong>Experience</strong> the calmness in the voice of MSS.</p>
+            <a class="link link-secondary" href="blog-on-maithreem-bhajatha.html">Let's Go!</a>
+        </section>
+
+        <section class="section off-white container-center">
+            <h1><i class="fas fa-icons"></i> Carnatic musical instruments</h1>
+            <small>Created on: 25th November 2020</small>
+            <p>Enter the world of <strong>carnatic music</strong> and understand the various musical instruments used in
+                a
+                concert!</p>
+            <a class="link link-secondary" href="blog-on-carnatic-instruments.html">Let's Go!</a>
+        </section>
+
+    </div>
     <footer class="footer">
         <div class="footer-header">Social media presence</div>
         <ul class="social-links list-non-bullet">
             <li class="list-item-inline">
-                <a class="link" href="https://discordapp.com/users/779740021510504448">
-                    <i class="fab fa-discord"> Discord</i>
+                <a class="link" href="https://github.com/supminn" rel="noopener noreferrer" target="_blank">
+                    <i class="fab fa-lg fa-github"></i><span class="web-desc"> Github</span>
                 </a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="https://github.com/supminn">
-                    <i class="fab fa-github"> Github </i>
+                <a class="link" rel="noopener noreferrer" target="_blank" href="https://twitter.com/supminn">
+                    <i class="fab fa-lg fa-twitter"></i><span class="web-desc"> Twitter</span>
                 </a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="https://twitter.com/supminn">
-                    <i class="fab fa-twitter"> Twitter</i>
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/supminn">
-                    <i class="fab fa-linkedin-in"> Linkedin</i>
+                <a class="link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/supminn">
+                    <i class="fab fa-lg fa-linkedin-in"></i><span class="web-desc"> Linkedin</span>
                 </a>
             </li>
         </ul>
         <small>Copyright © 2020 SupTECH</small>
     </footer>
-
+    <script src="./scripts/theme.js"></script>
 </body>
 
 </html>
