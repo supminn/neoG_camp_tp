@@ -15,13 +15,13 @@ window.onload = () => {
 const setDarkTheme = () => {
   toggleTheme.classList.remove("far", "fa-moon");
   toggleTheme.classList.add("fas", "fa-sun");
-  colorPallete.style.setProperty("--off-white", "#413333");
-  colorPallete.style.setProperty("--bg-color", "#312222");
+  colorPallete.style.setProperty("--off-white", "#251e1e");
+  colorPallete.style.setProperty("--bg-color", "#160f0f");
   colorPallete.style.setProperty("--font-color", "#FEF2F2");
   colorPallete.style.setProperty("--dark-gray", "#ABAEB4");
   colorPallete.style.setProperty("--primary-color", "#A60808");
   if (homePageBackground) {
-    homePageBackground.style.setProperty("background", "#312222");
+    homePageBackground.style.setProperty("background", "#160f0f");
   }
   checkTheme = toggleTheme.classList.value;
 };

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap');
 
 :root {
-    --icon-shade:#FEF2F2;
+    --icon-shade: #FEF2F2;
 }
 
 body {
@@ -103,6 +103,7 @@ p {
 
 .navigation .link-active {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 /** header **/
@@ -163,19 +164,35 @@ p {
     padding-inline-start: 0px;
 }
 
-.grid-container {
+.grid-container,
+.grid-project {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
-.flex-container {
+.grid-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-project {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.flex-container,
+.txt-description {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.txt-description {
+    padding: 0 0.5rem;
+    flex-direction: column;
 }
 
 .btn-theme {
@@ -185,10 +202,21 @@ p {
     cursor: pointer;
 }
 
-.btn-theme:hover{
+.btn-theme:hover {
     background-color: var(--icon-shade);
     color: var(--primary-color);
     opacity: 0.7;
+}
+
+.img-project {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -223,10 +251,13 @@ p {
         padding: 0.5rem;
     }
 
-
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0.5rem;
+    }
+
+    .grid-project {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
