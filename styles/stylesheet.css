@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap');
 
 :root {
-    --primary-color:#DC2626;
-    --off-white: #FEF2F2;
-    --dark-gray: #555b66;
+    --icon-shade: #FEF2F2;
 }
 
 body {
     font-family: 'Lora', serif;
-    margin: 0px
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 
 hr {
     margin: 2rem 0rem;
 }
+
 p {
     line-height: 1.6;
 }
+
 /** Background img for home page **/
-.homepage{
-    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url("/images/home-bg.jpg");
+.homepage {
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("/images/home-bg.jpg");
 }
+
 /** container **/
 .container {
     padding: 0rem 1rem;
@@ -36,6 +41,7 @@ p {
 .web-link {
     color: var(--primary-color);
 }
+
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -46,6 +52,7 @@ p {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
+    margin: 0 0.3rem;
 }
 
 .link-secondary {
@@ -53,30 +60,36 @@ p {
     border-radius: 0.5rem;
     font-weight: 600;
     border: 1px solid var(--primary-color);
+    margin: 0 0.3rem;
 }
 
 /** lists **/
 
 .list-non-bullet {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
 }
-.list-size-large{
+
+.list-size-large {
     font-size: large;
 }
+
 /** navigation **/
 
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 0.1rem;
+    padding: 0.1rem 0.5rem;
     border-bottom-left-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .navigation .nav-brand {
@@ -90,6 +103,7 @@ p {
 
 .navigation .link-active {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 /** header **/
@@ -130,10 +144,11 @@ p {
 
 .footer {
     background-color: var(--primary-color);
-    padding:1rem;
+    padding: 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    margin-top: 1rem;
 }
 
 .footer .link {
@@ -149,17 +164,106 @@ p {
     padding-inline-start: 0px;
 }
 
-@media only screen and (max-width: 450px){
+.grid-container,
+.grid-project {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-project {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.flex-container,
+.txt-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-description {
+    padding: 0 0.5rem;
+    flex-direction: column;
+}
+
+.btn-theme {
+    border: 1px solid white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-theme:hover {
+    background-color: var(--icon-shade);
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+.img-project {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content-container {
+        padding: 0 0.5rem;
+    }
+
     .hero .hero-img {
         max-width: 250px;
         display: block;
         margin: auto;
     }
-    .container a{
+
+    .list-item-inline {
         display: inline-block;
-        margin: 0.1rem;
+        padding: unset;
     }
-    .list-item-inline{
-        display: inline-block;
+
+    .web-desc {
+        display: none;
+    }
+
+    .flex-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-active {
+        border-radius: 50%;
+        border: 2px solid var(--off-white);
+        padding: 0.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .grid-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
     }
 }
