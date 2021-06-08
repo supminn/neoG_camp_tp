@@ -15,6 +15,7 @@ You have reached the pit stop for viewing [Supminn's](https://twitter.com/supmin
 8. Mongoose & MongoDB
 9. Hasura GraphQL
 10. Authentication using JWT
+11. Webpack
 
 
 ### Resources used for Styling
