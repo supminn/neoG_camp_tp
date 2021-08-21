@@ -29,7 +29,7 @@ p {
 /** container **/
 .container {
     padding: 0rem 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 
 .container-center {
@@ -218,6 +218,9 @@ p {
     flex-grow: 1;
 }
 
+.txt-highlight{
+    font-size: large;
+}
 
 @media only screen and (max-width: 768px) {
     .grid-project {
