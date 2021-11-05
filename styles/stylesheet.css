@@ -90,6 +90,7 @@ p {
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navigation .nav-brand {
@@ -215,10 +216,15 @@ p {
 .img-project {
     width: 100%;
     height: auto;
+    min-height: 15rem;
     flex-grow: 1;
 }
 
-.txt-highlight{
+.img-blur {
+    filter: blur(0.4rem);
+}
+
+.txt-highlight {
     font-size: large;
 }
 
